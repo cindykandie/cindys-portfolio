@@ -102,7 +102,7 @@ body .introduction {
 
 body .introduction .intro-phrase {
   line-height: 2;
-  background-image: url(../assets/images/profilesvg.svg);
+  background-image: url(../assets/icons/profilesvg.svg);
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
@@ -406,9 +406,9 @@ body .contact {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

@@ -82,7 +82,7 @@ body{
         flex-direction: column-reverse;
         .intro-phrase{
             line-height: 2;
-            background-image: url(../assets/images/profilesvg.svg);
+            background-image: url(../assets/icons/profilesvg.svg);
             background-size: contain;
             background-position: right;
             background-repeat: no-repeat;
@@ -334,7 +334,7 @@ body{
         padding: 20px 20px;
         display: flex;
         flex-direction: column-reverse;
-        justify-content: space-between;
+        justify-content:center;
         align-items: center;
 
         img{
