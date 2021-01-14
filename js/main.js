@@ -66,3 +66,23 @@ function init(){
     //init typewriter
     new TypeWriter(txtElement,words,wait)
 }
+
+
+//more projects button
+let theProjects = document.querySelector(".more-projects")
+let showBtn = document.querySelector(".btn-projects")
+let lessBtn = document.querySelector(".btn-less")
+
+function showProjects(e){
+    // console.log('rrrr')
+    theProjects.style.display ="block"
+    showBtn.style.display ="none"
+    lessBtn.style.display ="block"
+}
+
+function lessProjects(e){
+    // console.log('rrrr')
+    theProjects.style.display ="none"
+    showBtn.style.display ="block"
+    lessBtn.style.display ="none"
+}

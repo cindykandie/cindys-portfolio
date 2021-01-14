@@ -284,18 +284,24 @@ body{
         }
         button {
             display: flex;
-            flex-wrap: no-wrap;
+            flex-wrap: wrap;
             align-items: center;
             justify-content: center;
             background-image:linear-gradient(45deg, purple,deeppink);
+            border: none;
+            outline: none;
             padding: 5px 10px;
             margin: 30px auto;
             border-radius: 10px;
+            width: 60vw;
+            max-width: 300px;
 
             a{
             text-align: center;
-            font-size: 16px;
-            color: white;
+            font-size: 1.2rem;
+            color: rgb(144, 245, 248);
+            text-shadow: 2px 0px 0px black;
+
             font-family: Georgia, 'Times New Roman', Times, serif;
             text-transform: uppercase;
             text-decoration: none;
@@ -304,8 +310,8 @@ body{
         button:hover{
             background-image:linear-gradient(-45deg, purple,deeppink);
             a{
-            color: rgb(145, 248, 240);
-            text-decoration: rgb(146, 243, 18) underline;
+            color: rgb(237, 253, 87);
+            text-shadow: 2px 0px 0px black;
             }
         }
     }
