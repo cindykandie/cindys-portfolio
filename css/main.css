@@ -20,25 +20,50 @@ body header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 10px 10px;
-  position: fixed;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 2px 5px 0px;
   margin-top: 0;
   top: 0;
   left: 0;
+  position: fixed;
   width: 100vw;
 }
 
 body header img {
-  width: 4rem;
+  width: 1rem;
   margin-right: auto;
   background-color: rgba(68, 185, 214, 0.65);
   border-radius: 2px;
-  padding: 5px 5px;
+  padding: 10px 0 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body header .desktop {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  display: none;
 }
 
 body header a {
@@ -53,41 +78,86 @@ body header a {
 }
 
 body header a:hover {
-  color: brown;
+  color: #750404;
 }
 
-body .page-navbar {
-  padding: 20px 15px auto;
+body header ul {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 2;
+  position: relative;
+  text-align: justify;
+  border-radius: 5px;
+  height: 200px;
+  width: 100px;
+  -webkit-transform: translate(55%, -110%);
+          transform: translate(55%, -110%);
+  background-color: #8852ec;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  -webkit-box-shadow: 2px 2px 3px #5452fd;
+          box-shadow: 2px 2px 3px #5452fd;
+}
+
+body header ul li {
+  list-style: none;
+  text-align: justify;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: fixed;
-  top: 60px;
-  border-radius: 5px;
-  background-color: rgba(93, 84, 177, 0.5);
-  -webkit-box-shadow: 2px 2px 1px black;
-          box-shadow: 2px 2px 1px black;
-  width: 100vw;
+  margin: auto 10px;
 }
 
-body .page-navbar div {
-  padding: 1%;
-  cursor: pointer;
-}
-
-body .page-navbar div a {
+body header ul li a {
   text-decoration: none;
   color: black;
+  margin-left: auto;
+  border: none;
+  padding: 3px 3px;
+  border-radius: 5px;
+  font-weight: 500;
+  background-color: #7bfcf5;
 }
 
-body .page-navbar div a:hover {
-  text-shadow: -2px 2px 1px #7bfcf5;
+body header ul li a:hover {
+  color: #750404;
+  text-decoration: underline;
+}
+
+body header ul li img {
+  background-color: rgba(240, 220, 220, 0);
+}
+
+body header ul li img:hover {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+body header .open-nav {
+  background-color: rgba(240, 220, 220, 0);
+  width: 5px;
+  height: 3rem;
+}
+
+body header .open-nav:hover {
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 body .introduction {
@@ -203,7 +273,7 @@ body .skill-cards .skills {
 body .skill-cards .skills .card {
   border: 2px solid #7043ac;
   width: 85%;
-  height: 300px;
+  height: auto;
   margin: 20px auto;
   padding: 20px 20px 30px;
   line-height: 2;
@@ -540,11 +610,51 @@ body footer p {
   body {
     font-size: 1.3rem;
   }
-  body header img {
-    width: 5rem;
+  body header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 99vw;
+    padding: auto 30px;
+    background-color: rgba(68, 185, 214, 0.25);
+    overflow-x: hidden;
   }
-  body header a:hover {
-    color: brown;
+  body header img {
+    width: 3rem;
+    max-width: 100px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background-color: rgba(68, 185, 214, 0);
+  }
+  body header .desktop {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: relative;
+  }
+  body header ul {
+    display: none;
+  }
+  body header .open-nav {
+    display: none;
   }
   body .introduction {
     padding: 20px 35px;

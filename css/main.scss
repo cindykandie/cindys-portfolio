@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing:border-box;
 }
+
 body{
     margin-top: 0px;
     margin:0px;
@@ -18,25 +19,34 @@ body{
 
     header{
         display: flex;
-        align-items: center;
-        justify-content: space-around;
-        padding: 10px 10px;
-        position: fixed;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding: 2px 5px 0px;
         margin-top: 0;
         top: 0;
         left: 0;
+        position:fixed;
         width: 100vw;
 
+
         img{
-            width: 4rem;
+            width: 1rem;
             margin-right: auto;        
             background-color: rgba(68, 185, 214, 0.65);
             border-radius: 2px;
-            padding: 5px 5px;
-
-
-
+            padding: 10px 0 0;
+            flex:1;
         }
+        .desktop{
+            flex:4;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            display: none;
+        }
+       
         a{
             text-decoration: none;
             color: black;
@@ -49,37 +59,65 @@ body{
 
         }
         a:hover{
-            color: brown;
+            color: rgb(117, 4, 4);
         }
-    }
-    .page-navbar{
-        padding: 20px 15px auto;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        position: fixed;
-        top:60px;
-        border-radius: 5px;
-        background-color: rgba(93, 84, 177, 0.5);
-        box-shadow: 2px 2px 1px black;
-        width:100vw;
-        div{
-            padding: 1%;
-            cursor: pointer;
-            a{
-                text-decoration: none;
-                color: black;
+        ul{
+            flex:3;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: left;
+            flex-direction: column;
+            z-index: 2;
+            position: relative;
+            text-align: justify;
+            border-radius: 5px;
+            height: 200px;
+            width: 100px;
+            transform: translate(55%,-110%);
+            background-color: rgb(136, 82, 236);
+            transition: transform 0.5s ease-in;
+            box-shadow: 2px 2px 3px rgb(84, 82, 253);
+
+            li{
+                list-style: none;
+                text-align: justify;
+                justify-content: flex-end;
+                margin: auto 10px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    margin-left: auto;
+                    border: none;
+                    padding: 3px 3px;
+                    border-radius: 5px;
+                    font-weight: 500;
+                    background-color: rgb(123, 252, 245);
+
+        
+                }
+                a:hover{
+                    color: rgb(117, 4, 4);
+                    text-decoration: underline;
+                }
+                img{
+                    background-color: rgba(240, 220, 220,0);
+                }
+                img:hover{
+                    filter: invert(1);
+                }
             }
-
-        a:hover{
-            text-shadow: -2px 2px 1px rgb(123, 252, 245);
-
             
         }
-        
+        .open-nav{
+            background-color: rgba(240, 220, 220,0);
+            width: 5px;
+            height: 3rem;
+        }
+        .open-nav:hover{
+            filter: invert(1);
+        }
     }
-   
-    }
+    
     .introduction{
         padding: auto auto;
         margin: 60px auto;
@@ -168,7 +206,7 @@ body{
             .card{
                 border: 2px solid rgb(112, 67, 172);
                 width: 85%;
-                height: 300px;
+                height: auto;
                 margin: 20px auto;
                 padding: 20px 20px 30px;
                 line-height: 2;
@@ -440,12 +478,39 @@ body{
       body{
           font-size: 1.3rem;
           header{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 99vw;
+            padding:auto 30px;
+            background-color: rgba(68, 185, 214, 0.25);
+            overflow-x: hidden;
+
             img{
-                width: 5rem;
+                width: 3rem;
+                max-width: 100px;
+                flex:1;
+                background-color: rgba(68, 185, 214, 0);
+
+
+
             }
-            a:hover{
-                color: brown;
+            .desktop{
+                flex:4;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: row;
+                position: relative;
+               
             }
+            ul{
+                display: none;
+            }
+            .open-nav{
+                display: none;
+            }
+            
         }
         .introduction{
             padding: 20px 35px;

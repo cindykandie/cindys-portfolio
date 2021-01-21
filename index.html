@@ -11,12 +11,42 @@
     <title>Dev Cindy Kandie</title>
 </head>
 
-<body>
+<body class="dark">
     <div class="main-container">
 
         <!-- HEADER -->
         <header>
             <img src="assets/icons/logo2.png" alt="Cindy" title="CindyKandie">
+            
+            <div class="desktop">
+            <a href="#skills" title="Skills" rel="noopener">Skills</a>
+            
+            <a href="#projects" title="Projects" rel="noopener">Projects</a>
+            
+            <a href="#contact" title="Contact" rel="noopener">Contact</a>
+
+            <a href="assets/docs/Resume-pdf.pdf" target="_blank" rel="noopener" title="My Resumé" >My Resumé</a> 
+            
+            </div>
+
+            <ul class="phone-screen">
+                <li>
+                    <img class="close-nav" onclick="closeNav()" src="assets/icons/close.svg" alt="">
+                </li>
+                <li>
+                    <a href="#skills" title="Skills" rel="noopener">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects" title="Projects" rel="noopener">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact" title="Contact" rel="noopener">Contact</a>
+                </li>
+                <li>
+                    <a href="assets/docs/Resume-pdf.pdf" target="_blank" rel="noopener" title="My Resumé" >My Resumé</a>
+                </li>
+            </ul>
+            <img class="open-nav" onclick="openNav()"src="assets/icons/menu.svg" alt="">
         </header>
         <!-- HEADER -->
         <!-- PAGE NAV-BAR --> 
@@ -53,7 +83,7 @@
         <section class="skill-cards">
             <h3 class="cards-head">What I Do</h3>
 
-            <div class="skills">
+            <div class="skills" id="skills">
 
                 <div class="card card1">
                 <h4>HTML $ CSS</h4>
@@ -131,7 +161,7 @@
 
 
         <!-- MY WORK -->
-        <section class="work-cards">
+        <section class="work-cards" id="projects">
             <h3 class="cards-head">My Work $ Projects</h3>
 
             <div class="projects">
@@ -310,7 +340,7 @@
         <!-- ABOUT ME -->
 
         <!-- FOOTER -->
-        <section class="contact">
+        <section class="contact" id="contact">
                 <form>
                     <!-- <h4>Write To Me</h4>
                     <input type="text" placeholder="Your Name"><br>

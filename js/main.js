@@ -86,3 +86,26 @@ function lessProjects(e){
     showBtn.style.display ="block"
     lessBtn.style.display ="none"
 }
+
+let navLogo = document.querySelector('.open-nav')
+let navBar = document.querySelector('.phone-screen')
+let closeLogo = document.querySelector('.close-nav')
+  
+
+  function openNav(e){
+    navBar.style.transform = "translate(55%,0%)" 
+ }
+
+ function closeNav(e){
+    navBar.style.transform = "translate(55%,-110%)" 
+
+    
+
+
+    // navBar.style.transform = "scale(2)"
+ }
+ 
+  
+
+
+ 
