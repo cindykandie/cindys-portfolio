@@ -573,6 +573,7 @@ body footer {
       -ms-flex-align: center;
           align-items: center;
   max-width: 100vw;
+  cursor: pointer;
 }
 
 body footer .socials {
@@ -592,9 +593,18 @@ body footer .socials img:hover {
           filter: invert(1);
 }
 
-body footer p {
+body footer a {
+  text-decoration: none;
+  color: black;
+}
+
+body footer a p {
   font-size: 10px;
   padding-bottom: 20px;
+}
+
+body footer a:hover {
+  color: #6b0585;
 }
 
 @media (max-width: 320px) {
