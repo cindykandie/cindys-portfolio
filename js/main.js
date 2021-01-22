@@ -94,10 +94,13 @@ let closeLogo = document.querySelector('.close-nav')
 
   function openNav(e){
     navBar.style.transform = "translate(55%,0%)" 
+    navLogo.style.opacity = 0
  }
 
  function closeNav(e){
     navBar.style.transform = "translate(55%,-110%)" 
+    navLogo.style.opacity = 1
+
 
     
 
