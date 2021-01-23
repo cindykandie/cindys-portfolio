@@ -72,6 +72,7 @@ function init(){
 let theProjects = document.querySelector(".more-projects")
 let showBtn = document.querySelector(".btn-projects")
 let lessBtn = document.querySelector(".btn-less")
+let body = document.querySelector("body")
 
 function showProjects(e){
     // console.log('rrrr')
@@ -100,15 +101,9 @@ let closeLogo = document.querySelector('.close-nav')
  function closeNav(e){
     navBar.style.transform = "translate(55%,-110%)" 
     navLogo.style.opacity = 1
-
-
-    
-
-
     // navBar.style.transform = "scale(2)"
  }
  
-  
 
 
  

@@ -34,8 +34,11 @@ body header {
   width: 100vw;
 }
 
+body header .logo {
+  width: 8px;
+}
+
 body header img {
-  height: 55px;
   margin-right: auto;
   background-color: rgba(68, 185, 214, 0.65);
   border-radius: 2px;
@@ -91,9 +94,9 @@ body header ul {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -102,7 +105,7 @@ body header ul {
   position: relative;
   text-align: justify;
   border-radius: 5px;
-  height: 200px;
+  height: 220px;
   width: 100px;
   -webkit-transform: translate(55%, -110%);
           transform: translate(55%, -110%);
@@ -134,14 +137,16 @@ body header ul li a {
 }
 
 body header ul li a:hover {
-  color: #750404;
+  color: #9b1212;
   text-decoration: underline;
 }
 
 body header ul li img {
   background-color: rgba(240, 220, 220, 0);
   height: 35px;
-  text-align: right;
+  position: absolute;
+  left: 175px;
+  margin-right: auto;
 }
 
 body header ul li img:hover {
@@ -152,6 +157,8 @@ body header ul li img:hover {
 body header .open-nav {
   background-color: rgba(240, 220, 220, 0);
   height: 35px;
+  -webkit-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
 }
 
 body header .open-nav:hover {
